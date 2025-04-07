@@ -132,7 +132,7 @@ export const deleteAnimal = (req, res) => {
   }
 };
 
-// -------------------- CONTAR TOTAL DE ANIMAIS (OARA PAGINAÇÃO) --------------------
+// -------------------- CONTAR TOTAL DE ANIMAIS (PARA PAGINAÇÃO) --------------------
 export const getAnimalCount = (req, res) => {
   try {
     db.query('SELECT COUNT(*) as total FROM cachorros', (err, result) => {
