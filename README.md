@@ -24,9 +24,9 @@ Projeto full stack desenvolvido com React, Node.js e MySQL.
 
 ## 🚀 Funcionalidades
 
-- 🐶 Listagem paginada de cães
+- 📝 Listagem paginada de cães
 - ➕ Cadastro de novo animal
-- 🔍 Visualização de detalhes
+- 🔍 Visualização de detalhes do animal
 - ✏️ Edição dos dados
 - 🗑️ Exclusão com confirmação
 - 🎯 Feedback visual de ações
@@ -34,45 +34,63 @@ Projeto full stack desenvolvido com React, Node.js e MySQL.
 ---
 
 ## 🗃️ Banco de Dados
+Este projeto utiliza **MySQL** como banco de dados.
 
-Este projeto utiliza **MySQL** como banco de dados.  
-O script para criação da tabela está incluso.
+### 📄 Scripts disponíveis:
 
-### Script necessário:
-- `SQL/ExportDataAnimals.sql`
+- `SQL/DumpAnimals.sql` – Arquivo de exportação do banco de dados 
+- `SQL/Create&InsertAnimals.sql` – Criação da base de dados e tabela `cachorros` e Inserção de dados exemplo (população da tabela)
 
-Você pode executar esse script diretamente no **MySQL Workbench**
+Você pode executar os scripts no **MySQL Workbench** 
+
+--- 
 
 ## 🛠️ Como rodar o projeto localmente
-1. Clone o repositório:
+### 1. Clone o repositório:
+
+```bash
 git clone https://github.com/seu-usuario/React-Dog-Crud-Web.git
-cd React-Dog-Crud-Web
+cd seu repositorio
+```
 
-2. Configure the Database
-Run the ExportDataAnimals.sql script on MySQL Workbench
+### 2. Configure the Database
+Rode o script do ExportDataAnimals.sql ou Create&InsertAnimals SQL/ExportDataAnimals.sql no MySQL Workbench
 
-3. Backend
+### 3. Backend
+
+```bash
 cd backend
 npm install
+```
 
-4. Modifique o arquivo db.js colocando seu na raiz do backend com o conteúdo, fornecendo suas informações pessoais do banco:
-DB_HOST=localhost
-DB_USER=seu_usuario
-DB_PASSWORD=sua_senha
-DB_NAME=cachorros_react
+#### Em db.js na raiz do backend com o conteúdo, forneça suas informações pessoais do banco:
+DB_HOST=localhost<br>
+DB_USER=seu_usuario<br>
+DB_PASSWORD=sua_senha<br>
+DB_NAME=cachorros_react<br>
 
-5. Inicie o backend:
+#### Inicie o backend:
+
+```bash
 npm start
-O backend ficará disponível em: http://localhost:8800
+```
 
-6. Incie o Frontend
+> O backend ficará disponível em: **http://localhost:8800**
+
+---
+### 4. Frontend
+
+```bash
 cd frontend
 cd reactproject
 npm install
 npm start
-O frontend será iniciado em: http://localhost:5173
+```
 
-✅ Pronto!
+> O frontend será iniciado em: **http://localhost:5173**
+
+---
+### 5. 🏁 Pronto!
 Agora você pode acessar o sistema em
 🔗 http://localhost:5173
 e utilizar todas as funcionalidades do sistema 🐶
