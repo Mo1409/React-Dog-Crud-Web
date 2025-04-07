@@ -52,7 +52,7 @@ export default function ListAnimals() {
       const data = await res.json();
       const count = await countRes.json();
 
-      // Exemplo: assumindo 16 animais por página
+      // 16 animais por página
       setAnimals(data);
       setTotalPages(Math.ceil(count.total / 16));
     } catch (err) {
